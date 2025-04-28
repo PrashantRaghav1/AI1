@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    height: 80%;
+    background-color: #38393a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.user-chat-box {
+    width: 60%;
+    position: relative;
+    left: 40px;
+}
+
+.ai-chat-box {
+    width: 60%;
+    position: relative;
+    right: 40px;
+}
+
+.user-chat-area {
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(41, 40, 40);
+    position: relative;
+    left: 450px;
+    color: rgb(240, 248, 255);
+    border-radius: 40px 0px 40px 40px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.chooseimg {
+    width: 30%;
+    border-radius: 30px;
+}
+
+.ai-chat-area {
+    width: 90%;
+    padding: 20px;
+    background-color: rgb(75, 73, 73);
+    position: relative;
+    left: 10%;
+    color: rgb(240, 248, 255);
+    border-radius: 0px 40px 40px 40px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#user-image {
+    position: absolute;
+    right: 2%;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+#ai-image {
+    position: absolute;
+    left: 0%;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.prompt-area {
+    width: 100%;
+    height: 20%;
+    background-color: #38393a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prompt-area input[type="text"] {
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.prompt-area button {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(178, 178, 236);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    transition: all 0.5s;
+}
+
+.prompt-area button:hover {
+    background-color: rgba(0, 0, 0, 0.338);
+}
